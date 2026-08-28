@@ -1,0 +1,75 @@
+
+:root {
+  --uas-azul-marino: #002B5C;
+  --uas-dorado: #D4AF37;
+  
+  --fondo-principal: #F5F5F5;
+  --fondo-tarjetas: #FFFFFF;
+  --texto-oscuro: #333333;
+  --texto-claro: #FFFFFF;
+}
+
+body {
+  background-color: var(--fondo-principal);
+  color: var(--texto-oscuro);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.header-institucional, 
+.footer-institucional {
+  background-color: var(--fondo-principal);
+  color: var(--uas-azul-marino);
+  padding: 0.5rem 2rem;
+}
+
+.header-institucional{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.header-institucional h1{
+    color: var(--uas-azul-marino);
+}
+
+.header-institucional:hover{
+    box-shadow: 0px 4px 8px #333333;
+    transition: box-shadow 0.3s ease;
+
+}
+
+h1, h2, h3 {
+  color: var(--uas-azul-marino);
+}
+
+.btn-inscripcion {
+  background-color: var(--uas-dorado);
+  color: var(--uas-azul-marino);
+  border: none;
+  padding: 10px 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.btn-inscripcion:hover {
+  opacity: 0.9;
+}
+
+.box-logo {
+    display: flex;
+    object-fit: contain;
+    
+}
+
+.box-logo img{
+    max-width: 45%;
+    height: auto;
+}
+
+.header-textos {
+    text-align: left;
+}
