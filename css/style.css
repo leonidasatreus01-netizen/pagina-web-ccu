@@ -17,9 +17,6 @@ body {
   padding: 0;
 }
 
-
-
-
 .header-institucional, 
 .footer-institucional {
   background-color: var(--fondo-principal);
@@ -83,14 +80,32 @@ h1, h2, h3 {
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--fondo-tarjetas);
+  border-radius: 15px;
+}
+
+.tarjeta-ubicacion div:last-child {
+    flex: 1;
+    width: 100%;
 }
 
 .text-card{
-  font-family:Arial, Helvetica, sans-serif;
-  width: 30rem;
+  flex: 1;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-card ul {
+    list-style-position: inside; /* Mete las viñetas (los puntitos) al texto */
+    padding: 0; /* Quita el espacio invisible de la izquierda */
+    margin: 0;
 }
 
 .text-card p, li{
+  flex: 1;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 450;
@@ -101,9 +116,16 @@ h1, h2, h3 {
   transition: box-shadow 0.5s ease;
 }
 
+.mapa-contenedor {
+    width: 50%;
+}
+
+/* El mapa llena su caja al 100% */
 .tarjeta-ubicacion iframe {
+    width: 100%;
+    min-height: 400px;
     border-radius: 15px;
-    border: 1px #000;
+    border: none;
 }
 
 @media (max-width: 768px) {
