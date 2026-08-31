@@ -17,6 +17,16 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+    color: var(--uas-dorado);
+    text-decoration: underline; 
+}
+
 .header-institucional, 
 .footer-institucional {
   background-color: var(--fondo-principal);
